@@ -40,8 +40,14 @@
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="hero">
     <div class="hero-video-wrapper">
-      <video class="hero-video" id="heroVideo" src="fundo/Anima_imagem_estilo_wallpaper_1080p_202607112101.mp4" autoplay
-        muted loop playsinline></video>
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto">
+        <!-- H.265/HEVC: ~1.15 MB — Chrome 107+, Safari, Edge -->
+        <source src="fundo/hero_bg.mp4" type="video/mp4; codecs=hvc1" />
+        <!-- VP9 WebM: ~3.7 MB — Firefox, older Chrome -->
+        <source src="fundo/hero_bg.webm" type="video/webm; codecs=vp9" />
+        <!-- Original H.264 fallback (8 MB) — universal -->
+        <source src="fundo/Anima_imagem_estilo_wallpaper_1080p_202607112101.mp4" type="video/mp4" />
+      </video>
       <div class="hero-overlay"></div>
     </div>
 
@@ -53,14 +59,14 @@
       <h1 class="hero-title">
         <span class="title-line">Transformamos</span>
         <span class="title-line title-gold">Ideias em</span>
-        <span class="title-line">Experiência Digitais</span>
+        <span class="title-line">Experiências Digitais</span>
       </h1>
       <p class="hero-subtitle">
         Do código ao cliente. Da estratégia ao resultado.<br />
         Um ecossistema completo para escalar o seu negócio.
       </p>
       <div class="hero-actions">
-        <a href="#notebook-section" class="btn-primary" id="heroScrollBtn">
+        <a href="#quem-somos" class="btn-primary" id="heroScrollBtn">
           <span>Conheça Nossa Equipe</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 5v14M5 12l7 7 7-7" />
