@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Black Asset — Ecossistema completo de soluções digitais. Desenvolvimento, Operacional e Marketing unidos para escalar o seu negócio." />
+  <title>Black Asset | Agência Digital de Alta Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo_black_asset.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo_black_asset.png" alt="Black Asset Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Início</a></li>
+        <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+        <li><a href="#performance" class="nav-link">Performance</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="#contato" class="nav-cta" id="navCta">Fale Conosco</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrapper">
+      <video class="hero-video" id="heroVideo" src="fundo/Anima_imagem_estilo_wallpaper_1080p_202607112101.mp4" autoplay
+        muted loop playsinline></video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Agência de Resultados
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Transformamos</span>
+        <span class="title-line title-gold">Ideias em</span>
+        <span class="title-line">Experiência Digitais</span>
+      </h1>
+      <p class="hero-subtitle">
+        Do código ao cliente. Da estratégia ao resultado.<br />
+        Um ecossistema completo para escalar o seu negócio.
+      </p>
+      <div class="hero-actions">
+        <a href="#notebook-section" class="btn-primary" id="heroScrollBtn">
+          <span>Conheça Nossa Equipe</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+        <a href="#performance" class="btn-ghost">Ver Serviços</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projetos Entregues</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Taxa de Satisfação</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span><span class="stat-suffix">x</span>
+          <span class="stat-label">ROI Médio</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Role para explorar</span>
+    </div>
+  </section>
+
+  <!-- ===== HORIZONTAL SCROLL SECTION (WHY A PRO SITE) ===== -->
+  <section class="horizontal-scroll-section" id="horizontalSection">
+    <div class="horizontal-sticky">
+      <div class="horizontal-track" id="horizontalTrack">
+
+        <!-- Master SVG for continuous animated line around cards -->
+        <svg id="masterSvg" class="master-svg"></svg>
+
+        <div class="horizontal-panel intro-panel">
+          <div class="panel-content">
+            <div class="section-tag">O Poder do Digital</div>
+            <h2>Por que ter um<br /><span class="gold">Site Profissional?</span></h2>
+            <p>Seu negócio precisa mais do que apenas um perfil no Instagram para dominar o mercado.</p>
+          </div>
+        </div>
+
+        <div class="horizontal-panel">
+          <div class="panel-card">
+            <div class="card-number">01</div>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-glow"></div>
+              <div class="panel-icon">🏛️</div>
+            </div>
+            <h3>Credibilidade Imediata</h3>
+            <p>Uma presença oficial transmite confiança e autoridade. Seu site é a sua vitrine 24 horas por dia,
+              trabalhando para fechar negócios mesmo enquanto você dorme.</p>
+          </div>
+        </div>
+
+        <div class="horizontal-panel">
+          <div class="panel-card">
+            <div class="card-number">02</div>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-glow"></div>
+              <div class="panel-icon">🎯</div>
+            </div>
+            <h3>Máxima Conversão</h3>
+            <p>Diferente de redes sociais cheias de distrações, uma Landing Page profissional guia o usuário diretamente
+              para a ação que você deseja: comprar ou virar um lead qualificado.</p>
+          </div>
+        </div>
+
+        <div class="horizontal-panel">
+          <div class="panel-card">
+            <div class="card-number">03</div>
+            <div class="panel-icon-wrap">
+              <div class="panel-icon-glow"></div>
+              <div class="panel-icon">🛡️</div>
+            </div>
+            <h3>Um Ativo 100% Seu</h3>
+            <p>Algoritmos mudam e contas podem ser banidas do dia para a noite. O seu site é o único terreno na internet
+              que você realmente controla e dita as regras a longo prazo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUEM SOMOS ===== -->
+  <section class="section quem-somos" id="quem-somos">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Quem Somos</div>
+        <h2 class="section-title">Conheça a Mente Por<br /><span class="gold">Trás da Máquina</span></h2>
+        <p class="section-intro">
+          Não somos apenas uma agência, somos um ecossistema completo de soluções digitais.
+          Nosso time é formado por especialistas que cobrem todos os pilares do sucesso online:
+          desenvolvimento, processos e atração de clientes.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Carlos -->
+        <div class="team-card" data-index="0">
+          <div class="team-card-inner">
+            <div class="team-photo-wrapper">
+              <img src="PESSOAS/CARLOS.jpeg" alt="Carlos — Desenvolvimento" class="team-photo" />
+              <div class="team-photo-overlay"></div>
+              <div class="team-role-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                </svg>
+                Dev
+              </div>
+            </div>
+            <div class="team-info">
+              <div class="team-number">01</div>
+              <h3 class="team-name">Carlos</h3>
+              <div class="team-title-role">Desenvolvimento</div>
+              <p class="team-desc">O arquiteto digital. Responsável por transformar ideias complexas em código limpo,
+                rápido e seguro. Cria a estrutura tecnológica robusta que suporta o crescimento do seu projeto sem
+                gargalos.</p>
+              <div class="team-skills"><span>Código Limpo</span><span>Arquitetura</span><span>Segurança</span></div>
+            </div>
+          </div>
+          <div class="team-card-glow"></div>
+        </div>
+
+        <!-- Levi -->
+        <div class="team-card" data-index="1">
+          <div class="team-card-inner">
+            <div class="team-photo-wrapper">
+              <img src="PESSOAS/LEVI.jpeg" alt="Levi — Operacional" class="team-photo" />
+              <div class="team-photo-overlay"></div>
+              <div class="team-role-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" />
+                </svg>
+                Ops
+              </div>
+            </div>
+            <div class="team-info">
+              <div class="team-number">02</div>
+              <h3 class="team-name">Levi</h3>
+              <div class="team-title-role">Operacional</div>
+              <p class="team-desc">O motor da equipe. Garante que todas as engrenagens continuem girando. Focado em
+                otimização de processos, gestão de projetos e na execução impecável de cada etapa para que as entregas
+                sejam sempre acima da média.</p>
+              <div class="team-skills"><span>Processos</span><span>Gestão</span><span>Excelência</span></div>
+            </div>
+          </div>
+          <div class="team-card-glow"></div>
+        </div>
+
+        <!-- Victor -->
+        <div class="team-card" data-index="2">
+          <div class="team-card-inner">
+            <div class="team-photo-wrapper">
+              <img src="PESSOAS/VICTOR.jpeg" alt="Victor — Marketing" class="team-photo" />
+              <div class="team-photo-overlay"></div>
+              <div class="team-role-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99l1.5 1.5z" />
+                </svg>
+                Mkt
+              </div>
+            </div>
+            <div class="team-info">
+              <div class="team-number">03</div>
+              <h3 class="team-name">Victor</h3>
+              <div class="team-title-role">Marketing</div>
+              <p class="team-desc">O estrategista de crescimento. Domina a arte de captar atenção, gerar desejo e
+                converter cliques em clientes reais. Planeja as campanhas e ações que vão colocar o seu produto na
+                frente do público certo.</p>
+              <div class="team-skills"><span>Tráfego</span><span>Conversão</span><span>Estratégia</span></div>
+            </div>
+          </div>
+          <div class="team-card-glow"></div>
+        </div>
+      </div>
+
+      <div class="complement-bar">
+        <div class="complement-item">
+          <div class="complement-icon">⚡</div><span>Tecnologia de ponta</span>
+        </div>
+        <div class="complement-sep">+</div>
+        <div class="complement-item">
+          <div class="complement-icon">⚙️</div><span>Processos precisos</span>
+        </div>
+        <div class="complement-sep">+</div>
+        <div class="complement-item">
+          <div class="complement-icon">🚀</div><span>Marketing que converte</span>
+        </div>
+        <div class="complement-sep">=</div>
+        <div class="complement-item complement-result">
+          <div class="complement-icon">🏆</div><span>Resultado real</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERFORMANCE ===== -->
+  <section class="section performance-section" id="performance">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Nossos Serviços</div>
+        <h2 class="section-title">Desempenho &<br /><span class="gold">Performance</span></h2>
+        <p class="section-intro">Cada solução é construída para performar. Medimos tudo, otimizamos constantemente e
+          entregamos crescimento real e mensurável.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card featured">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg></div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites e aplicações de alta performance, código limpo e escalável. Estrutura robusta que cresce junto com o
+            seu negócio.</p>
+          <ul class="service-list">
+            <li>Landing Pages de Alta Conversão</li>
+            <li>Sistemas Web Customizados</li>
+            <li>Integrações & APIs</li>
+            <li>Performance & SEO Técnico</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg></div>
+          <h3>Tráfego Pago</h3>
+          <p>Campanhas estratégicas no Meta Ads e Google Ads que atraem o cliente certo na hora certa, com ROI positivo
+            garantido.</p>
+          <ul class="service-list">
+            <li>Meta Ads (Facebook & Instagram)</li>
+            <li>Google Ads</li>
+            <li>Remarketing Avançado</li>
+            <li>Otimização Contínua</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg></div>
+          <h3>Gestão & Operacional</h3>
+          <p>Otimizamos os processos internos do seu negócio para que cada entrega seja acima da média, com menos
+            retrabalho e mais resultado.</p>
+          <ul class="service-list">
+            <li>Automação de Processos</li>
+            <li>Gestão de Projetos</li>
+            <li>SOP & Documentação</li>
+            <li>KPIs & Dashboards</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg></div>
+          <h3>Estratégia Digital</h3>
+          <p>Planejamento completo da sua presença online, desde o posicionamento de marca até a jornada de compra do
+            cliente.</p>
+          <ul class="service-list">
+            <li>Posicionamento de Marca</li>
+            <li>Funil de Vendas</li>
+            <li>Conteúdo Estratégico</li>
+            <li>Análise de Concorrência</li>
+          </ul>
+          <div class="service-arrow">→</div>
+        </div>
+      </div>
+
+      <div class="metrics-strip">
+        <div class="metric-item">
+          <div class="metric-bar-wrapper">
+            <div class="metric-bar" data-width="95"></div>
+          </div>
+          <div class="metric-info"><span class="metric-name">Taxa de Entrega no Prazo</span><span
+              class="metric-value">95%</span></div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-bar-wrapper">
+            <div class="metric-bar" data-width="88"></div>
+          </div>
+          <div class="metric-info"><span class="metric-name">Aumento Médio em Conversões</span><span
+              class="metric-value">+88%</span></div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-bar-wrapper">
+            <div class="metric-bar" data-width="99"></div>
+          </div>
+          <div class="metric-info"><span class="metric-name">Clientes que Voltam</span><span
+              class="metric-value">99%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="section contact-section" id="contato">
+    <div class="contact-bg-grid"></div>
+    <div class="section-container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="section-tag">Contato</div>
+          <h2 class="section-title">Pronto para<br /><span class="gold">Escalar?</span></h2>
+          <p class="contact-desc">Não perca mais tempo. Converse com nossa equipe e descubra como a Black Asset pode
+            transformar o seu negócio em um ativo digital lucrativo.</p>
+          <div class="contact-items">
+            <a href="mailto:contato@blackasset.com.br" class="contact-item" id="contactEmail">
+              <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg></div>
+              <div><span class="contact-item-label">E-mail</span><span
+                  class="contact-item-value">contato@blackasset.com.br</span></div>
+            </a>
+            <a href="https://wa.me/5500000000000" target="_blank" class="contact-item" id="contactWhatsapp">
+              <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg></div>
+              <div><span class="contact-item-label">WhatsApp</span><span class="contact-item-value">Clique para
+                  conversar</span></div>
+            </a>
+            <div class="contact-item" id="contactInstagram">
+              <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg></div>
+              <div><span class="contact-item-label">Instagram</span><span
+                  class="contact-item-value">@blackasset.digital</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-header">
+              <h3>Envie uma mensagem</h3>
+              <p>Respondemos em até 24 horas</p>
+            </div>
+            <div class="form-group"><label for="formName">Nome completo</label><input type="text" id="formName"
+                name="name" placeholder="Seu nome" required /></div>
+            <div class="form-group"><label for="formEmail">E-mail</label><input type="email" id="formEmail" name="email"
+                placeholder="seu@email.com" required /></div>
+            <div class="form-group"><label for="formService">Serviço de interesse</label>
+              <select id="formService" name="service">
+                <option value="">Selecione um serviço</option>
+                <option value="dev">Desenvolvimento Web</option>
+                <option value="traffic">Tráfego Pago</option>
+                <option value="ops">Gestão & Operacional</option>
+                <option value="strategy">Estratégia Digital</option>
+                <option value="complete">Solução Completa</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="formMessage">Mensagem</label><textarea id="formMessage" name="message"
+                placeholder="Conte-nos sobre seu projeto..." rows="4" required></textarea></div>
+            <button type="submit" class="btn-primary btn-full" id="formSubmitBtn">
+              <span>Enviar Mensagem</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3" />
+              </svg>
+              <span>Mensagem enviada! Entraremos em contato em breve.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="logo_black_asset.png" alt="Black Asset" class="footer-logo" />
+        <p>Transformando ideias em ativos digitais de alto valor.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#performance">Performance</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#performance">Desenvolvimento Web</a></li>
+          <li><a href="#performance">Tráfego Pago</a></li>
+          <li><a href="#performance">Gestão & Operacional</a></li>
+          <li><a href="#performance">Estratégia Digital</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Black Asset. Todos os direitos reservados.</span>
+      <span>Feito com <span class="gold">●</span> por Black Asset</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
