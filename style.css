@@ -557,6 +557,7 @@ body{
     linear-gradient(90deg,rgba(201,168,76,.03) 1px,transparent 1px);
   background-size:64px 64px;
   mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black,transparent);
+  pointer-events:none;
 }
 .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start}
 .contact-info .section-tag{margin-bottom:16px}
@@ -570,8 +571,11 @@ body{
   border-radius:var(--r-md);padding:18px 22px;
   text-decoration:none;color:inherit;
   transition:all var(--ease);
+  cursor:pointer;
+  user-select:none;
 }
 .contact-item:hover{border-color:rgba(201,168,76,.25);background:rgba(201,168,76,.04);transform:translateX(6px)}
+.contact-item:active{transform:scale(0.96) translateX(4px);background:rgba(201,168,76,.08)}
 .contact-item-icon{
   width:42px;height:42px;flex-shrink:0;
   background:rgba(201,168,76,.09);
