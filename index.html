@@ -40,15 +40,7 @@
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="hero">
     <div class="hero-video-wrapper">
-      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto">
-        <!-- H.265/HEVC: ~1.15 MB — Chrome 107+, Safari, Edge -->
-        <source src="fundo/hero_bg.mp4" type="video/mp4; codecs=hvc1" />
-        <!-- VP9 WebM: ~3.7 MB — Firefox, older Chrome -->
-        <source src="fundo/hero_bg.webm" type="video/webm; codecs=vp9" />
-        <!-- Original H.264 fallback (8 MB) — universal -->
-        <source src="fundo/Anima_imagem_estilo_wallpaper_1080p_202607112101.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
+      <canvas class="hero-video" id="heroCanvas" width="1920" height="1080"></canvas>
     </div>
 
     <!-- Zone 1: navbar clearance -->
@@ -488,6 +480,11 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
   <script src="script.js"></script>
 </body>
 
